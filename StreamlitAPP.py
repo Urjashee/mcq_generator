@@ -75,8 +75,8 @@ with st.form("user_inputs"):
                     )
                     # st.write(response)
             except Exception as e:
-                traceback.print_exception(type(e), e, e.__traceback__)
-                st.error("Error")
+                # traceback.print_exception(type(e), e, e.__traceback__)
+                st.error(e)
 
 
             else:
