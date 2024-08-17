@@ -14,3 +14,7 @@ pip install -r requirements.txt
 ```
 cp .env.example .env
 ```
+#### 4. Run the test.py to check if logging is working
+```
+python test.py
+```
