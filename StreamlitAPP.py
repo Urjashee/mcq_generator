@@ -47,7 +47,7 @@ st.title("MCQs Creator Application with LangChain 1 38")
 # Create a form using st.form
 with st.form("user_inputs"):
     # File Upload
-    uploaded_file = st.file_uploader("Uplaod a PDF or txt file")
+    uploaded_file = st.file_uploader("Upload a PDF or txt file")
     # Input Fields
     mcq_count = st.number_input("No. of MCQs", min_value=3, max_value=50)
     # Subject
@@ -75,7 +75,7 @@ with st.form("user_inputs"):
                     )
                     # st.write(response)
             except Exception as e:
-                # traceback.print_exception(type(e), e, e.__traceback__)
+                traceback.print_exception(type(e), e, e.__traceback__)
                 st.error("Error")
 
 
